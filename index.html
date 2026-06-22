@@ -247,7 +247,7 @@
 
 <div class="card">
   <div class="header">
-    <div class="tag">Tecnologias Móveis</div>
+    <div class="tag"></div>
     <h1>Calcule seu <span>IMC</span></h1>
     <p class="subtitle">Índice de Massa Corporal — resultado enviado pelo WhatsApp.</p>
   </div>
@@ -336,7 +336,7 @@ const msg = encodeURIComponent(
   `_Calculado em: ${new Date().toLocaleDateString('pt-BR')}_`
 );
 
-document.getElementById('btn-wa').href = `https://wa.me/?text=${msg}`;
+document.getElementById('btn-wa').href = `https://api.whatsapp.com/send?text=${msg}`;
 
     document.getElementById('result').classList.add('visible');
   }
